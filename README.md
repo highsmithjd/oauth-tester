@@ -1,6 +1,6 @@
 # OAuth Tester
 
-A command-line tool for testing OAuth 2.0 flows with Microsoft Azure AD. Supports authorization code flow, device code flow, and client credentials flow.
+A command-line tool for testing OAuth 2.0 flows with Microsoft Entra ID. Supports authorization code flow, device code flow, and client credentials flow.
 
 ## Features
 
@@ -13,7 +13,7 @@ A command-line tool for testing OAuth 2.0 flows with Microsoft Azure AD. Support
 ## Prerequisites
 
 - Go 1.23 or later
-- Azure AD application registration
+- Microsoft Entra ID application registration
 
 ## Installation
 
@@ -54,24 +54,24 @@ go run ./cmd/main.go -flow authcode
 ### Example Usage
 
 1. **Authorization Code Flow**:
-   - Enter your Azure AD Tenant ID
+   - Enter your Microsoft Entra ID Tenant ID
    - Enter your Client ID
    - Enter your Client Secret
    - Complete authentication in browser
 
 2. **Device Code Flow**:
-   - Enter your Azure AD Tenant ID
+   - Enter your Microsoft Entra ID Tenant ID
    - Enter your Client ID
    - Visit the provided URL and enter the code
 
 3. **Client Credentials Flow**:
-   - Enter your Azure AD Tenant ID
+   - Enter your Microsoft Entra ID Tenant ID
    - Enter your Client ID
    - Enter your Client Secret
 
-## Azure AD Setup
+## Microsoft Entra ID Setup
 
-1. Go to Azure Portal → Azure Active Directory → App registrations
+1. Go to Azure Portal → Microsoft Entra ID → App registrations
 2. Create a new registration or use existing one
 3. For Authorization Code Flow:
    - Set application type to "Web"
